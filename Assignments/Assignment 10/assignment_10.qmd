@@ -1,0 +1,71 @@
+---
+title: "SURV400: Assignment 10"
+format: html
+editor: visual
+---
+
+Please complete this assignment to the best of your ability. When you are done, render the document and upload the .docx or .html file to the submission portal on ELMS.
+
+## Description of Data
+
+The data are the same ones we used in Assignment 3 involving young boys' trauma on the Gaza strip in the mid 2000s. The following variables are in the data set:
+
+-   **Age:** The age of the boy in years.
+
+-   **PTSD:** Cumulative score of post traumatic stress disorder symptomatology. Higher scores = more PTSD symptoms.
+
+-   **Lonely:** Cumulative score of self-reported loneliness. Higher scores = more loneliness.
+
+-   **Trauma:** Count of experienced traumatic events (e.g., shelling of home, loss of parents). Higher scores = more traumatic events.
+
+-   **Depress:** Cumulative score of depressive symptomatology. Higher scores = more symptoms.
+
+## Read in and Describe the Data
+
+Read the data into a data frame called "g_trauma" and describe the data set using the summary() command.
+
+```{r}
+
+```
+
+Produce a correlation table for all variables in the data set. What can we generally tell about the data? Describe the relationships between at least 3 pairs of variables. (Significance tests not required, just interpret the correlation values.)
+
+```{r}
+
+```
+
+**Answer:**
+
+## Model the Data
+
+Plot the relationship between traumatic events and PTSD symptoms. What can we say about homoskedasticity and linearity as assumptions?
+
+```{r}
+
+```
+
+**Answer:**
+
+## Model the Data
+
+Now we're going to model the data. Let's determine whether traumatic events cause PTSD symptoms after controlling for the boys' age, loneliness, and depressive symptoms. Fit this glm model in an object called trauma_model.
+
+```{r}
+
+```
+
+What is the value of the test statistic, regression coefficient (for trauma) and *p*-value for the effect of traumatic events? Interpret the estimate. Is this relationship significant? Assume the alpha level was .05. What would happen if the alpha was .01 instead?
+
+**Answer:**
+
+## Check the Assumptions
+
+We're only going to have you check whether the residuals of the model are normally distributed. Use the hist() and/or qqnorm() commands along with the resid() command and model object to verify whether the assumption of normality seems reasonable.
+
+```{r}
+
+```
+
+**Answer:**
+
+That's it! Please render and upload this document to ELMS.
